@@ -6,7 +6,7 @@ set -euo pipefail
 : "${PADAVAN_BRANCH:=master}"
 : "${PADAVAN_CONTAINERFILE:=${PADAVAN_REPO%.git}/raw/$PADAVAN_BRANCH/Dockerfile}"
 : "${PADAVAN_TOOLCHAIN_URL:=}"
-: "${PADAVAN_IMAGE:=registry.gitlab.com/dm38/padavan-ng}"
+: "${PADAVAN_IMAGE:=registry.gitlab.com/hadzhioglu/padavan-ng}"
 : "${PADAVAN_BUILDER_CONFIG:=${XDG_CONFIG_HOME:-$HOME/.config}/padavan-builder}"
 : "${PADAVAN_BUILD_ALL_LOCALLY:=}"
 : "${PADAVAN_BUILD_CONTAINER:=}"

@@ -2,15 +2,15 @@
 
 set -euo pipefail
 
-: "${PADAVAN_REPO:=https://gitlab.com/hadzhioglu/padavan-ng.git}"
+: "${PADAVAN_REPO:=https://gitlab.com/dm38/padavan-ng.git}"
 : "${PADAVAN_BRANCH:=master}"
 : "${PADAVAN_CONTAINERFILE:=${PADAVAN_REPO%.git}/raw/$PADAVAN_BRANCH/Dockerfile}"
-: "${PADAVAN_TOOLCHAIN_URL:=https://gitlab.com/api/v4/projects/hadzhioglu%2Fpadavan-ng/packages/generic/toolchain/latest/toolchain.tzst}"
-: "${PADAVAN_IMAGE:=registry.gitlab.com/hadzhioglu/padavan-ng}"
+: "${PADAVAN_TOOLCHAIN_URL:=}"
+: "${PADAVAN_IMAGE:=registry.gitlab.com/dm38/padavan-ng}"
 : "${PADAVAN_BUILDER_CONFIG:=${XDG_CONFIG_HOME:-$HOME/.config}/padavan-builder}"
 : "${PADAVAN_BUILD_ALL_LOCALLY:=}"
 : "${PADAVAN_BUILD_CONTAINER:=}"
-: "${PADAVAN_BUILD_TOOLCHAIN:=}"
+: "${PADAVAN_BUILD_TOOLCHAIN:=true}"
 : "${PADAVAN_PAUSE_BEFORE_BUILD:=}"
 : "${PADAVAN_CONFIG:=}"
 : "${PADAVAN_EDITOR:=}"
